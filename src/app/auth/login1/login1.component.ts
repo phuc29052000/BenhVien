@@ -1,0 +1,109 @@
+import { Component, OnInit } from '@angular/core';
+import {
+  UntypedFormBuilder,
+  UntypedFormGroup,
+  Validators,
+} from '@angular/forms';
+
+import { AuthData } from 'src/app/@core/data/auth';
+import { NzMessageService } from 'ng-zorro-antd/message';
+import { Router } from '@angular/router';
+import { hasPermission } from 'src/app/helper/common.helper';
+import { PERMISSION } from 'src/app/constant/var';
+@Component({
+  selector: 'app-login1',
+  templateUrl: './login1.component.html',
+  styleUrls: ['./login1.component.scss']
+})
+export class Login1Component implements OnInit {
+
+  validateForm !:UntypedFormGroup;
+  passwordVisible = false;
+  showLoading = false;
+  constructor
+  (
+    private fb:UntypedFormBuilder,
+    private service : AuthData,
+    private router : Router,
+    private messeage : NzMessageService
+    
+  ) {}
+
+  submitForm() :void {
+        if(this.validateForm.valid){
+          this.showLoading = true;
+          this.service.login(this.validateForm.value).subscribe(
+            (res)=> {
+              res = JSON.parse(res,(key,value)=>{
+                if(key === 'userId'){
+                  return BigInt(value).toString();
+                }
+                return value;
+                
+              });
+              
+              this.showLoading = false;
+              this.messeage.create('success','Đăng nhập thành công');
+              localStorage.setItem('accessToken', res.access_token);
+              localStorage.setItem('tokenType', res.token_type);
+              localStorage.setItem('refreshToken', res.refresh_token);
+              localStorage.setItem('expires_in', res.expires_in);
+              
+
+
+              this.service.userInfo().subscribe(
+                (info)=> {
+                  info = JSON.parse(info,(key,value)=> {
+                    if(key === 'Hoang' || key ==='phuc'){
+                      return BigInt(value).toString();
+                    }
+                    return value;
+                  });
+                  localStorage.setItem('roles', info.roles);
+                  localStorage.setItem('userId', info.sub.toString());
+                  localStorage.setItem('fullname', info.family_name);
+                  localStorage.setItem('branchId', info.branch_id);
+                  localStorage.setItem('branchCode', info.branch_code);
+                  localStorage.setItem('proviceId', info.provice_id);
+                  if (hasPermission(PERMISSION.SYSTEM_TASK)) {
+                    this.router.navigate(['/user/cavet']);
+                  } else {
+                    this.router.navigate(['/user']);
+                  }
+                },
+                (loi)=>{
+                  this.messeage.create(
+                    'error',
+                    'Không thể lấy thông tin tài khoản người dùng'
+                  )
+                }
+                );   
+            },
+              (loi)=> {
+                this.showLoading = false;
+                this.messeage.create(
+                  'error',
+                  'Tài khoản hoặc mật khẩu không chính xác'
+                )
+              });
+        } else {
+          Object.values(this.validateForm.controls).forEach((control) => {
+            if (control.invalid) {
+              control.markAsDirty();
+              control.updateValueAndValidity({onlySelf:true}); 
+            }    
+          });     
+        }
+  }   
+
+
+  ngOnInit(): void {
+    this.validateForm = this.fb.group ({
+      username : [null,[Validators.required]],
+      password : [null,[Validators.required]],
+    });
+    localStorage.clear();
+ 
+  }
+
+}

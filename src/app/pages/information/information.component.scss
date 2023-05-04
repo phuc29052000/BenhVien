@@ -1,0 +1,1475 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.background_register_form {
+    display: flex;
+}
+
+.form_group_main {
+    width: 760px;
+    height: 1004px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 24px ;
+        .form_header{
+            width: 728px;
+            height: 972px;
+            // background-color: red;
+            padding: 16px 16px 0px 16px;
+            .infor_form1 {
+                width: 728px;
+                height: 244px;
+                .line {
+                 width: 728px;
+                 border: 1px solid rgba(0, 0, 0, 0.05);
+                 margin-top: 14px;
+                }
+            
+            .header {
+                width: 728px;
+                height: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                    .content_left{
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000000;
+                    }
+                    .content_right {
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: rgba(0, 0, 0, 0.25);
+                        margin: 0px 11px 0px 0px;
+                    }
+                    .icon1 {
+                        color: #00000066;
+                    }
+            }
+             .form_namedate {
+                height: 40px;
+                width: 728px;
+                // background-color: red;
+                margin-top: 12px;
+                margin-bottom: 12px;
+                   .item{
+                    display: flex;
+                    align-items: center;
+              
+                    .name {
+                        width: 100px;
+                        height: 20px;
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000000;
+                        margin: 10px 8px 10px 0px;
+                    }
+                    .input1 {
+                        width: 244px;
+                        height: 40px;
+                        padding: 10px;
+                        background: #F7F8F9;
+                        border-radius: 4px;
+                        margin: 0px 24px 0px 0px;
+                        border: none;
+                    }
+                    .date {
+                        width: 100px;
+                        height: 20px;
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000000;
+                        margin: 10px 8px 10px 0px;
+                    }
+                    .background_date {
+                        position: relative;
+                    }
+                    .input2 {
+                        width: 244px;
+                        height: 40px;
+                        padding: 10px;
+                        background: #F7F8F9;
+                        border-radius: 4px;
+                        border: none;
+                    }
+                    .icon2 {
+                        position: absolute;
+                        top: 11px;
+                        right: 12px;
+                        font-size: 16px;
+                        cursor: pointer;
+                    }
+                   }
+             }
+            } .form_genderphone {
+                width: 728px;
+                height: 40px;
+                // background-color: red;
+                .item1 {
+                    display: flex;
+                    align-items: center;
+                        .date {
+                        width: 100px;
+                        height: 20px;
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000000;
+                        margin: 10px 8px 10px 0px;
+                        
+                    }
+                   .background_gender{
+                    position: relative;
+                    .input3 {
+                        width: 244px;
+                        height: 40px;
+                        padding: 10px;
+                        background: #F7F8F9;
+                        border-radius: 4px;
+                        margin-right: 24px;
+                        border: none;
+                    }
+                    .icon3 {
+                        position: absolute;
+                        top: 14px;
+                        right: 35px;
+                        cursor: pointer;
+                    }
+                }
+                    .phone {
+                        width: 100px;
+                        height: 20px;
+                        font-family: 'Segoe UI';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #000000;
+                        margin: 10px 8px 10px 0px;
+                    }    
+                    .input4 {
+                        width: 244px;
+                        height: 40px;
+                        padding: 10px;
+                        background: #F7F8F9;
+                        border-radius: 4px;
+                        border: none;
+                    }
+                }
+            }
+            .form_citydistrict {
+                height: 40px;
+                width: 728px;
+                // background-color: red;
+                margin-top: 12px;
+            }
+        }
+            .form_citydistrict {
+                    width: 728px;
+                    height: 40px;
+                    .item2 {
+                        display: flex;
+                        align-items: center;
+                        .city {
+                            width: 100px;
+                            font-family: 'Segoe UI';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000000;
+                            margin: 10px 8px 10px 0px;
+                        }
+                        .backround_city {
+                            position: relative;
+                        }
+                        .input5 {
+                            width: 244px;
+                            height: 40px;
+                            padding: 10px;
+                            border-radius: 4px;
+                            background: #F7F8F9;
+                            border: none;
+                        }
+                        .icon4 {
+                            position: absolute;
+                            top: 14px;
+                            right: 11px;
+                            cursor: pointer;
+                        }
+                        .district {
+                            width: 100px;
+                            font-family: 'Segoe UI';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000000;
+                            margin: 10px 8px 10px 24px;
+                        }
+                        .background_district{
+                            position: relative;
+                        }
+                        .input6 {
+                            width: 244px;
+                            height: 40px;
+                            padding: 10px;
+                            border-radius: 4px;
+                            background-color: #F7F8F9;
+                            border: none;
+                        }
+                        .icon5 {
+                            position: absolute;
+                            top:14px;
+                            right: 12px;
+                            cursor: pointer;
+                        }
+                    }
+                }    .form_address {
+                    height: 40px;
+                    width: 728px;
+                    margin-top: 12px;
+                        .item3 {
+                            display: flex;
+                            align-items: center;
+                           
+                        }
+                        .address {
+                            width: 100px;
+                            font-family: 'Segoe UI';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #000000;
+                            margin: 10px 8px 10px 0px;
+                        }
+                        .input7 {
+                            height: 40px;
+                            width: 620px;
+                            border-radius: 4px;
+                            background-color: #F7F8F9;
+                            padding: 10px;
+                            border: none;
+                        }
+                    }
+                .linehight {
+                    width: 728px;
+                    border-radius: nullpx;
+                    border: 1px solid rgba(0, 0, 0, 0.05);
+                    margin: 16px 0px 0px 0px;
+                }
+            .infor_form2{
+                    width: 728px;
+                    height: 384px;
+                    // background-color: red;
+                    margin-top: 16px;
+                    .header_receive {
+                        height: 24px;
+                        width: 728px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .title_receiveleft {
+                            height: 20px;
+                            width: 131px;
+                            .content_receiveleft {
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                            }
+                        }
+                        .title_receiveright {
+                            margin-top: 2px;
+                            .content_receiveright {
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: rgba(0, 0, 0, 0.25);
+                                margin: 0px 11px 0px 0px;
+                            }
+                            .icon6 {
+                                color: #00000066;
+                            }
+                        }        
+                    }  .linehight1 {
+                        margin-top: 12px;      
+                        width: 728px;
+                        border: 1px solid rgba(0, 0, 0, 0.05);
+                    }
+            }
+            .form_Reception {
+                width: 728px;
+                height: 40px;
+                // background-color: red;
+                margin-top: 12px;
+                        .item4 {
+                            display: flex;
+                            align-items: center;
+                            .day_Reception {
+                                width: 100px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0px 8px 0px 0px;
+                            }
+                            .background_reception {
+                                position: relative;
+                            }
+                            .input8 {
+                                width: 244px;
+                                height: 40px;
+                                background: #F7F8F9;
+                                border-radius: 4px;
+                                padding: 10px;
+                                border: none;
+                            }
+                            .icon7 {
+                                position: absolute;
+                                top: 11px;
+                                right: 12px;
+                                font-size: 16px;
+                                cursor: pointer;
+                            }
+                            .subclass {
+                                width: 100px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0px 8px 0px 24px;
+                            }
+                            .background_subclass {
+                                position: relative;
+                            }
+                            .input9 {
+                                width: 244px;
+                                height: 40px;
+                                border-radius: 4px;
+                                background: #F7F8F9;
+                                padding: 10px;
+                                border: none;
+                            }
+                            .icon8 {
+                                position: absolute;
+                                top: 14px;
+                                right: 12px;
+                                cursor: pointer;
+                            }
+                        }
+            }    .form_sourcetype {
+                width: 728px;
+                height: 40px;
+                // background-color: red;
+                margin-top: 12px;
+                    .item5 {
+                        display: flex;
+                        align-items: center;
+                            .type {
+                                width: 100px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0px 8px 0px 0px;
+                            }
+                            .background_type {
+                                position: relative;
+                            }
+                            .input10 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                border-radius: 4px;
+                                background: #F7F8F9;
+                                border: none;
+                            }
+                            .icon9 {
+                                position: absolute;
+                                top:14px;
+                                right:12px;
+                                cursor: pointer;
+                            }
+                            .source {
+                                width: 100px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0px 8px 0px 24px;
+                            }
+                            .input11 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                border-radius: 4px;
+                                background: #F7F8F9;
+                                border: none;
+                            }
+                            .icon10 {
+                                position: absolute;
+                                top:14px;
+                                right: 12px;
+                                cursor: pointer;
+                            }
+                    }
+            } 
+            .form_institute_accident {
+                width: 728px;
+                height: 40px;
+                // background-color: red;
+                margin-top: 12px;
+                    .item6 {
+                        display: flex;
+                        align-items: center;
+                            .institute {
+                                width: 100px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0px 8px 0px 0px;
+                            }
+                            .background_institute {
+                                position: relative;
+                            }
+                            .input12 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                border-radius: 4px;
+                                background: #F7F8F9;
+                                border: none;
+                            }
+                            .icon11 {
+                                position: absolute;
+                                top:14px;
+                                right: 12px;
+                            }
+                            .accident {
+                                width: 100px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0px 8px 0px 24px;
+                            }
+                            .background_accident{
+                                position: relative;
+                            }
+                            .input13 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                border: none;
+                                border-radius: 4px;
+                                background: #F7F8F9;
+                            }
+                            .icon12 {
+                                position: absolute;
+                                top: 14px;
+                                right: 12px;
+                            }
+                    }
+                }   
+                .form_object_group {
+                    width: 728px;
+                    height: 40px;
+                    margin-top: 12px;
+                        .item7 {
+                            align-items: center;
+                            .object {
+                                width: 100px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0px 8px 0px 0px;
+                            }
+                            .background_object {
+                                position: relative;
+                            }
+                            .input14 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                border: none;
+                                border-radius: 4px;
+                                background: #F7F8F9;
+                            }
+                            .icon13 {
+                                position: absolute;
+                                top:14px;
+                                right: 12px;
+                                cursor: pointer;
+                            }
+                            .group {
+                                width: 100px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 0px 8px 0px 24px;
+                            }
+                            .background_group {
+                                position: relative;
+                            }
+                            .input15 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                border: none;
+                                border-radius: 4px;
+                                background: #F7F8F9;
+                            }
+                            .icon14 {
+                                position: absolute;
+                                top:14px;
+                                right: 12px;
+                                cursor: pointer;
+                            }      
+                        }   
+                }
+                    .form_rank_positon{
+                        width: 728px;
+                        height: 40px;
+                        margin-top: 12px;
+                            .item8 {
+                                align-items: center;
+                                .rank {
+                                    width: 100px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000000;
+                                    margin: 0px 8px 0px 0px;
+                                }
+                                .background_rank {
+                                    position: relative;
+                                }
+                                .input16 {
+                                    width: 244px;
+                                    height: 40px;
+                                    padding: 10px;
+                                    border: none;
+                                    border-radius: 4px;
+                                    background: #F7F8F9;
+                                }
+                                .icon15 {
+                                    position: absolute;
+                                    top:14px;
+                                    right: 12px;
+                                    cursor: pointer;
+                                }
+                                .positon {
+                                    width: 100px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000000;
+                                    margin: 0px 8px 0px 24px;
+                                }
+                                .background_positon {
+                                    position: relative;
+                                }
+                                .input17 {
+                                    width: 244px;
+                                    height: 40px;
+                                    padding: 10px;
+                                    border: none;
+                                    border-radius: 4px;
+                                    background: #F7F8F9;
+                                }
+                                .icon16 {
+                                    position: absolute;
+                                    top:14px;
+                                    right: 12px;
+                                    cursor: pointer;
+                                }
+                            }
+                    }
+                    .form_unit {
+                        width: 728px;
+                        height: 40px;
+                        margin-top: 12px;
+                            .item9 {
+                                align-items: center;
+                                .unit {
+                                    width: 100px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000000;
+                                    margin: 0px 8px 0px 0px;
+                                }
+                                .background_unit {
+                                    position: relative;
+                                }
+                                .input18 {
+                                    width: 244px;
+                                    height: 40px;
+                                    border: none;
+                                    background: #F7F8F9;
+                                    padding: 10px;
+                                    border-radius: 4px;
+                                }
+                                .icon17 {
+                                    position: absolute;
+                                    top:14px;
+                                    right: 12px;
+                                    cursor: pointer ;
+                                }
+                            }
+                    }
+                    .list {
+                        width: 458px;
+                        height: 24px;
+                        // background-color: red;
+                        margin-top: 12px;
+                        .item10 {
+                            align-items: center;
+                            .check1 {
+                                margin: 0px 12px 0px 0px;
+                            }
+                            .appointment {
+                                width: 101px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin: 2px 16px 0px 0px;
+                            }
+                            .linehight2 {
+                                width: 16px;
+                                border: 1px solid #E3E3E6;
+                                transform: rotate(90deg)
+                            }
+                            .check2 {
+                                margin-left: 10px;
+                            }
+                            .package {
+                                margin-left: 12px;
+                                margin-top: 2px;
+                            }
+                            .linehight3 {
+                                margin-left: 10px;
+                                width: 16px;
+                                border: 1px solid #E3E3E6;
+                                transform: rotate(90deg);
+                            }
+                            .check3 {
+                                margin-left: 6px;
+                            }
+                            .received {
+                                margin-top: 2px;
+                                margin-left: 8px;
+                                width: 106px;
+                                height: 20px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                            }
+                        }
+                       
+                    } 
+                    .linehight4 {
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                        width: 728px;
+                        border: 1px solid rgba(0, 0, 0, 0.05);
+                    }
+                    .header_register {
+                        width: 728px;
+                        height: 280px;
+                        // background-color: red;
+                        .sup {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .title_register {
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                            }
+                        }
+                        .click {
+                            font-family: 'Segoe UI';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: rgba(0, 0, 0, 0.25);
+                        }
+                        .icon18 {
+                            margin-left: 10px;
+                            color: #00000066;
+                        }
+                    }.linehight5 {
+                        margin-top: 16px;
+                        margin-bottom: 12px;
+                        width: 728px;
+                        border: 1px solid rgba(0, 0, 0, 0.05);
+                    }
+                    .form_reason {
+                        width: 728px;
+                        height: 40px;
+                        // background-color: red;
+                            .item11 {
+                                align-items: center;
+                                margin-bottom: 12px;
+                                .reason {
+                                    width: 100px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #000000;
+                                    margin-right: 8px;
+                                    }
+                                .input19 {
+                                    width: 620px;
+                                    height: 40px;
+                                    background: #F7F8F9;
+                                    border-radius: 4px;
+                                    padding: 10px;
+                                    border: none;
+                                }
+                            }
+                            .item12 {
+                                align-items: center;
+                                margin-bottom: 12px;
+                            }
+                            .guarantee {
+                                width: 100px;
+                                color: #000000;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-right: 8px;
+                            }
+                            .input20 {
+                                width: 620px;
+                                height: 40px;
+                                background: #F7F8F9;
+                                border-radius: 4px;
+                                padding: 10px;
+                                border: none;
+                            }
+                    }
+                    .item13 {
+                        align-items: center;
+                        margin-bottom: 12px;
+                            .free_number {
+                                width: 100px;
+                                color: #000000;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin-right: 8px;
+                            }
+                            .background_free_number {
+                                position: relative;
+                            }
+                            .input21 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                background: #F7F8F9;
+                                border-radius: 4px;
+                                padding: 10px;
+                                border: none;
+                            }
+                            .icon19 {
+                                position: absolute;
+                                top:14px;
+                                right: 12px;
+                                cursor: pointer;
+                            }
+                            .free_number1 {
+                                width: 100px;
+                                color: #000000;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin: 0px 8px 0px 24px;
+                            }
+                            .background_freenumber1 {
+                                position: relative;
+                            }
+                            .input22 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                background: #F7F8F9;
+                                border-radius: 4px;
+                                padding: 10px;
+                                border: none;
+                            }
+                            .icon20 {
+                                position: absolute;
+                                top: 14px;
+                                right: 12px;
+                                cursor: pointer;
+                            }
+                    }.item14 {
+                        align-items: center;
+                        margin-bottom: 12px;
+                            .service {
+                                width: 100px;
+                                color: #000000;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                margin: 0px 8px 0px 0px;
+                            }
+                            .background_service {
+                                position: relative;
+                            }
+                            .input23 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                background: #F7F8F9;
+                                border-radius: 4px;
+                                padding: 10px;
+                                border: none;
+                            }
+                            .icon21 {
+                                position: absolute;
+                                top:14px;
+                                right: 12px;
+                            }
+                            .room {
+                                margin: 0px 8px 0px 24px;
+                                width: 100px;
+                                color: #000000;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                            .background_room {
+                                position: relative;
+                            }
+                            .input24 {
+                                width: 244px;
+                                height: 40px;
+                                padding: 10px;
+                                background: #F7F8F9;
+                                border-radius: 4px;
+                                padding: 10px;
+                                border: none;
+                            }
+                            .icon22 {
+                                position: absolute;
+                                top:14px;
+                                right: 12px;
+                            }
+                    }.list_customer{
+                        width: 628px;
+                        height: 24px;
+                        // background-color: red;
+                          .check4 {
+                            margin : 0px 12px 0px 0px ;
+                          }
+                          .prioritize {
+                            margin-top :2px;
+                            width: 46px;
+                            height: 20px;
+                            color: #000000;
+                            font-family: 'Segoe UI';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                          }
+                          .linehight6 {
+                            width: 16px;
+                            margin: 4px 14px;
+                            border: 1px solid #E3E3E6;
+                            transform: rotate(90deg);
+                          }
+                          .check5 {
+                             margin-right: 12px;
+                          }
+                          .collect_money {
+                            margin-top: 2px;
+                            margin-right: 10px;
+                            height: 20px;
+                            width: 51px;
+                            font-family: 'Segoe UI';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                          }
+                          .linehight7 {
+                            width: 16px;
+                            border: 1px solid #E3E3E6;
+                            transform: rotate(90deg);
+                            
+                          }
+                          .check6 {
+                            margin-left: 10px;
+                          }
+                          .insurance {
+                            margin: 2px 0px 0px 12px;
+                            font-family: 'Segoe UI';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                          }
+                          .linehight8 {
+                            width: 16px;
+                            border: 1px solid #E3E3E6;
+                            transform: rotate(90deg);
+                            margin-left: 8px;
+                          }
+                          .policy {
+                            margin-top: 2px;
+                            margin-left: 6px;
+                          }
+                        
+                    }       
+}
+                .form_right {
+                    height: 572px;
+                    width: 368px;
+                    // background-color: red;
+                    margin: 24px 0px 0px 0px;
+                        .header_form_right {
+                            width: 368px;
+                            height: 280px;
+                            background: #FFFFFF;
+                            border-radius: 8px;
+                                .form_insurance {
+                                height: 248.00003051757812px;
+                                width: 336px;
+                                // background-color: red;
+                                margin: 0px 16px 16px 16px;
+                                }
+                                .header_insurance {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    .tilte_insurance {
+                                        margin-top: 16px;
+                                        font-family: 'Segoe UI';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000000;
+                                    }
+                                    .switch {
+                                        margin: 10px 0px 0px 0px;
+                                    }                    
+                                }
+                                .linehight9 {
+                                    width: 336px;
+                                    margin-top: 12px;
+                                    border: 1px solid rgba(0, 0, 0, 0.05);
+                                }
+                            .form_card {
+                                width: 336px;
+                                height: 40px;
+                                margin-top: 12px;
+                                    .title_card {
+                                        width: 100px;
+                                        height: 20px;
+                                        margin: 10px 8px 10px 0px;
+                                        font-family: 'Segoe UI';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000000;
+                                    }
+                                    .input25 {
+                                        width: 228px;
+                                        height: 40px;
+                                        background: #F7F8F9;
+                                        border-radius: 4px;
+                                        padding: 10px;
+                                        border: none;
+                                    }
+                            }
+                            .form_NameCard {
+                                margin-top: 12px;
+                                width: 336px;
+                                height: 40px;
+                                    .title_NameCard {
+                                        width: 100px;
+                                        height: 20px;
+                                        margin: 10px 8px 10px 0px;
+                                        font-family: 'Segoe UI';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000000;
+                                    }
+                                    .input26 {
+                                        width: 228px;
+                                        height: 40px;
+                                        background: #F7F8F9;
+                                        border-radius: 4px;
+                                        padding: 10px;
+                                        border: none;
+                                    }
+                            }
+                            .form_Date {
+                                margin-top: 12px;
+                                width: 336px;
+                                height: 40px;
+                                    .title_Date {
+                                        width: 100px;
+                                        height: 20px;
+                                        margin: 10px 8px 10px 0px;
+                                        font-family: 'Segoe UI';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #000000;
+                                    }
+                                    .input27 {
+                                        width: 228px;
+                                        height: 40px;
+                                        background: #F7F8F9;
+                                        border-radius: 4px;
+                                        padding: 10px;
+                                        border: none;
+                                    }
+                            }
+                            .background_QrCode {
+                                width: 336px;
+                                height: 44px;
+                                margin:12px 8px 0px 0px;
+                                display: flex;
+                             
+                                .form_QrCode {
+                                    width: 100px;
+                                    height: 44px;
+                                    background: rgba(0, 64, 255, 0.1);
+                                    border-radius: 4px;
+                                    margin-right: 8px;
+                                    .icon_Qr {     
+                                        margin: 5px 8px 10px 13.5px;
+                                        color: #0040FF;
+                                        span {
+                                            margin: 4px 0px 14px 4px;
+                                            font-size: 24px;
+                                            cursor: pointer;
+                                        }
+                                    } 
+                                    .titlte_Qr {
+                                        margin-top: 12px;
+                                        font-family: 'Segoe UI';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #0040FF;
+                                        
+                                    }
+                                }
+                                .form_CheckCard{
+                                    width: 228px;
+                                    height: 44px;
+                                    background: rgba(0, 179, 53, 0.1);
+                                    border-radius: 4px;
+                                        span {
+                                            margin: 10px 8px 10px 61px;
+                                            font-size: 24px;
+                                            color:#00B335;
+                                            cursor: pointer;
+                                        }
+                                        .titlte_CheckCard {
+                                            margin: 12px 0px;
+                                            font-family: 'Segoe UI';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #00B335;
+                                          
+                                        }
+                                }
+                            }
+                           
+                        }
+                        .header_Bot {
+                            width: 368px;
+                            height: 276px;
+                            background: #FFFFFF;
+                            margin-top: 16PX;
+                            border-radius: 8px;
+                                .form_Id {
+                                    height: 244px;
+                                    width: 336px;
+                                    margin: 16px;
+                                    // background-color: red;
+                                    .header_Id {
+                                        display: flex;
+                                        justify-content: space-between;
+                                            .tilte_Id {
+                                                margin-top: 16px;
+                                            }
+                                            nz-switch {
+                                                margin-top: 16px;
+                                            }
+                                    }
+                                }
+                                .linehight10{
+                                    width: 336px;
+                                    border: 1px solid rgba(0, 0, 0, 0.05);
+                                    margin-top: 12px;
+                                }
+                                .form_Realationship {
+                                    width: 336px;
+                                    height: 40px;
+                                    margin-top: 12px;
+                                        .title_Realationship {
+                                            width: 100px;
+                                            margin: 10px 8px 10px 0px;
+                                            font-family: 'Segoe UI';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #000000;
+                                            }
+                                        input {
+                                         width: 228px;
+                                        height: 40px;
+                                        background: #F7F8F9;
+                                        border-radius: 4px;
+                                        padding: 10px;
+                                        border: none;
+                                        }
+                                }
+                                .form_NameRealtionship {
+                                    width: 336px;
+                                    height: 40px;
+                                    margin-top: 12px;
+                                        .title_NameRealtionship {
+                                            width: 100px;
+                                            margin: 10px 8px 10px 0px;
+                                            font-family: 'Segoe UI';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #000000;
+                                        }
+                                        input {
+                                            width: 228px;
+                                            height: 40px;
+                                            background: #F7F8F9;
+                                            border-radius: 4px;
+                                            padding: 10px;
+                                            border: none;
+                                        }
+                                }
+                                .form_TelephoneNumber {
+                                    width: 336px;
+                                    height: 40px;
+                                    margin-top: 12px;
+                                        .title_TelephoneNumber {
+                                            width: 100px;
+                                            margin: 10px 8px 10px 0px;
+                                            font-family: 'Segoe UI';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #000000;
+                                        }
+                                        input {
+                                            width: 228px;
+                                            height: 40px;
+                                            background: #F7F8F9;
+                                            border-radius: 4px;
+                                            padding: 10px;
+                                            border: none;
+                                        }
+                                }
+                                .form_AddressRealtionship {
+                                    width: 336px;
+                                    height: 40px;
+                                    margin-top: 12px;
+                                        .title_AddressRealtionship {
+                                            width: 100px;
+                                            margin: 10px 8px 10px 0px;
+                                            font-family: 'Segoe UI';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #000000;
+                                        }
+                                        input {
+                                            width: 228px;
+                                            height: 40px;
+                                            background: #F7F8F9;
+                                            border-radius: 4px;
+                                            padding: 10px;
+                                            border: none;
+                                        }
+                                }      
+                        } 
+                }
+                .form_Caculate {
+                    height: 64px;
+                    width: 1199px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px -4px 8px rgba(0, 0, 0, 0.02);
+                    display: flex;
+                    justify-content: space-between;
+                        .layout_Left {
+                            height: 24px;
+                            width: 695px;
+                            // background-color: red;
+                            margin: 20px 181px 20px 24px;
+                            display: flex;
+                                .form_MoneyPay {
+                                    width: 158px;
+                                    height: 24px;
+                                        .title_Money {
+                                            width: 80px;
+                                            height: 20px;
+                                            font-family: 'Segoe UI';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            color: #000000;
+                                            margin: 2px 8px 2px 0px;
+                                        }
+                                        .Money {
+                                            width: 70px;
+                                            height: 24px;
+                                            font-family: 'Segoe UI';
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                            color: #000000;
+                                        }
+                                       
+                                } 
+                               .linehight11 {
+                                width: 16px;
+                                height: 0px;
+                                margin: 11px 10px;
+                                border: 1px solid #E3E3E6;
+                                transform: rotate(90deg);
+                               }
+                            .form_PatientPay{
+                                height: 24px;
+                                width: 165px;
+                                .title_PatientPay {
+                                    width: 87px;
+                                    height: 20px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    margin: 2px 8px 2px 0px;
+                                    color: #000000;
+                                }
+                                .Money_PatientPay {
+                                    width: 70px;
+                                    height: 24px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #000000;
+                                }
+                            }
+                            .linehight12 {
+                                width: 16px;
+                                height: 0px;
+                                margin: 11px 8px 11px 9px;
+                                border: 1px solid #E3E3E6;
+                                transform: rotate(90deg);
+                            }
+                        } .form_NumberNext {
+                            height: 24px;
+                            width: 102px;
+                            .title_NumberNext {
+                                width: 75px;
+                                height: 20px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 20px;
+                                color: #000000;
+                                margin-top: 2px;
+                            }
+                            .number_PatientPay {
+                                width: 19px;
+                                height: 24px;
+                                margin: 0px 0px 0px 8px;
+                                font-family: 'Segoe UI';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }   .linehight13 {
+                                width: 16px;
+                                height: 0px;
+                                border: 1px solid #E3E3E6;
+                                transform: rotate(90deg);
+                                margin: 11px 4px 11px 10px;
+                        }
+                        .form_NumberPatient {
+                            width: 174px;
+                            height: 24px;
+                                .title_NumberPatient {
+                                    width: 147px;
+                                    margin: 2px 8px 2px 0px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                                .number_Examined {
+                                    width: 19px;
+                                    height: 24px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #000000;
+                                }
+                        }
+                      .layout_right {
+                        height: 44px;
+                        width: 275px;
+                        // background-color: red;
+                        display: flex;
+                        cursor: pointer;
+                        margin: 10px 24px 10px 0px;
+                            .form_Print{
+                                height: 44px;
+                                width: 116px;
+                                background: #00B335;
+                                border-radius: 4px;
+                                span {
+                                    margin: 10px 8px 10px 16px;
+                                    font-size: 24px;
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                                .title_Print {
+                                    margin: 12px 16px 12px 0px;
+                                    font-family: 'Segoe UI';
+                                    font-style: normal;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                            } .form_SaveInfor {
+                                height: 44px;
+                                width: 151px;
+                                background: #0040FF;
+                                border-radius: 4px;
+                                margin: 0px 0px 0px 8px;
+                                cursor: pointer;
+                                    span {
+                                        margin: 10px 8px 10px 16px;
+                                        font-size: 24px;
+                                        color: #FFFFFF;
+                                        cursor: pointer;
+                                    }
+                                    .title_Print{
+                                        margin: 12px 16px 12px 0px;
+                                        font-family: 'Segoe UI';
+                                        font-style: normal;
+                                        font-weight: 600;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        color: #FFFFFF;
+                                        cursor: pointer;
+                                    }
+                            }
+                      }
+                }
+
+
+
