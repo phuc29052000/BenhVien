@@ -18,11 +18,17 @@
                   <div nz-row class="item">
                     <div nz-col class="name">Họ và tên</div>
                     <div nz-col>
-                        <form action="">
-                            <nz-form-item>
-                                  <nz-form-control>
+                        <form nz-form [formGroup]="validateForm" >
+                            <nz-form-item >
+                                  <nz-form-control  nzErrorTip="Chưa điền họ tên">
                                       <nz-input-group>
-                                        <input type="text" placeholder="Nhập" class="input1">
+                                        <input 
+                                        type="text" 
+                                        nz-input
+                                        formControlName="username" 
+                                        placeholder="Nhập" 
+                                        class="input1"
+                                        >
                                       </nz-input-group>
                                   </nz-form-control>
                             </nz-form-item>
@@ -30,11 +36,16 @@
                     </div>
                     <div nz-col class="date">Ngày sinh</div>
                     <div nz-col>
-                        <form action="">
+                        <form nz-form [formGroup]="validateForm">
                             <nz-form-item>
-                                  <nz-form-control>
+                                  <nz-form-control nzErrorTip="Chưa điền ngày sinh">
                                       <nz-input-group class="background_date">
-                                        <input type="text" placeholder="DDD/MM/YYY" class="input2">
+                                        <input 
+                                        type="text" 
+                                        nz-input
+                                        formControlName="birthday" 
+                                        placeholder="DDD/MM/YYY" 
+                                        class="input2">
                                         <span nz-icon nzType="calendar" nzTheme="outline" class="icon2"></span>
                                       </nz-input-group>
                                   </nz-form-control>
@@ -48,11 +59,17 @@
                 <div nz-row class="item1">
                   <div nz-col class="date">Giới tính</div>
                   <div nz-col>
-                      <form action="">
+                      <form nz-form [formGroup]="validateForm">
                           <nz-form-item>
-                                <nz-form-control>
+                                <nz-form-control nzErrorTip="Chưa điền giới tính">
                                     <nz-input-group class="background_gender">
-                                      <input type="text" placeholder="Nhập" class="input3">
+                                      <input 
+                                      type="text" 
+                                      nz-input
+                                      formControlName="gender"
+                                      placeholder="Nhập" 
+                                      class="input3"
+                                      >
                                       <span nz-icon nzType="down" nzTheme="outline" class="icon3"></span>
                                     </nz-input-group>
                                 </nz-form-control>
@@ -61,11 +78,17 @@
                   </div>
                   <div nz-col class="phone">Di động</div>
                   <div nz-col>
-                      <form action="">
+                      <form nz-form [formGroup]="validateForm">
                           <nz-form-item>
-                                <nz-form-control>
+                                <nz-form-control nzErrorTip="Bạn chưa điền số điện thoại">
                                     <nz-input-group>
-                                      <input type="text" placeholder="Nhập" class="input4">
+                                      <input 
+                                      type="text"
+                                      nz-input
+                                      formControlName="phone"
+                                       placeholder="Nhập" 
+                                       class="input4"
+                                       >
                                     </nz-input-group>
                                 </nz-form-control>
                           </nz-form-item>
@@ -78,11 +101,17 @@
                 <div nz-row class="item2">
                   <div nz-col class="city">Thành phố</div>
                   <div nz-col>
-                      <form action="">
+                      <form nz-form [formGroup]="validateForm">
                           <nz-form-item>
-                                <nz-form-control>
+                                <nz-form-control nzErrorTip="Bạn chưa điền thành phố">
                                     <nz-input-group class="background_city">
-                                      <input type="text" placeholder="Nhập" class="input5">
+                                      <input 
+                                      type="text"
+                                      nz-input
+                                      formControlName="city" 
+                                      placeholder="Nhập" 
+                                      class="input5"
+                                      >
                                       <span nz-icon nzType="down" nzTheme="outline" class="icon4"></span>
                                     </nz-input-group>
                                 </nz-form-control>
@@ -91,11 +120,17 @@
                   </div>
                   <div nz-col class="district">Quận/Xã</div>
                   <div nz-col>
-                      <form action="">
+                      <form nz-form [formGroup]="validateForm">
                           <nz-form-item>
-                                <nz-form-control>
+                                <nz-form-control nzErrorTip="Bạn chưa điền quận / xã">
                                     <nz-input-group class="background_district">
-                                      <input type="text" placeholder="Nhập" class="input6">
+                                      <input 
+                                      type="text"
+                                      nz-input
+                                      formControlName="district" 
+                                       placeholder="Nhập" 
+                                       class="input6"
+                                       >
                                       <span nz-icon nzType="down" nzTheme="outline" class="icon5"></span>
                                     </nz-input-group>
                                 </nz-form-control>
@@ -109,11 +144,16 @@
                 <div nz-row class="item3">
                   <div nz-col class="address">Địa chỉ</div>
                   <div nz-col nzSpan="12">
-                      <form action="">
+                      <form nz-form [formGroup]="validateForm">
                           <nz-form-item>
-                                <nz-form-control>
+                                <nz-form-control nzErrorTip="Bạn chưa nhập địa chỉ">
                                     <nz-input-group>
-                                      <input type="text" placeholder="Nhập" class="input7">
+                                      <input 
+                                      type="text"
+                                      nz-input
+                                      formControlName="address" 
+                                       placeholder="Nhập" 
+                                       class="input7">
                                     </nz-input-group>
                                 </nz-form-control>
                           </nz-form-item>
@@ -141,11 +181,16 @@
                       <div nz-row class="item4">
                         <div nz-col class="day_Reception">Ngày nhập viện</div>
                         <div nz-col>
-                            <form action="">
+                            <form nz-form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Bạn chưa điền ngày nhập viện">
                                           <nz-input-group class="background_reception">
-                                            <input type="text" placeholder="DD/MM/YYYY" class="input8">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="hospitalizedday"
+                                            placeholder="DD/MM/YYYY" 
+                                            class="input8">
                                             <span nz-icon nzType="calendar" nzTheme="outline" class="icon7"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -154,11 +199,16 @@
                         </div>
                         <div nz-col class="subclass">Phân lớp</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Bạn chưa điền phân lớp">
                                           <nz-input-group class="background_subclass">
-                                            <input type="text" placeholder="Chọn" class="input9">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="subclass"
+                                            placeholder="Chọn" 
+                                            class="input9">
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon8"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -172,11 +222,17 @@
                       <div nz-row class="item5">
                         <div nz-col class="type">Loại</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Bạn chưa điền loại">
                                           <nz-input-group class="background_type">
-                                            <input type="text" placeholder="Chọn" class="input10">
+                                            <input 
+                                            type="text"
+                                            nz-input
+                                            formControlName="type" 
+                                            placeholder="Chọn" 
+                                            class="input10"
+                                            >
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon9"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -185,11 +241,17 @@
                         </div>
                         <div nz-col class="source">Nguồn</div>
                         <div nz-col>
-                            <form action="">
+                            <form  [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Bạn chưa điền nguồn">
                                           <nz-input-group class="background_source">
-                                            <input type="text" placeholder="Chọn" class="input11">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="source" 
+                                            placeholder="Chọn" 
+                                            class="input11"
+                                            >
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon10"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -203,11 +265,17 @@
                       <div nz-row class="item6">
                         <div nz-col class="institute">Từ viện</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Bạn chưa điền Từ Viện">
                                           <nz-input-group class="background_institute">
-                                            <input type="text" placeholder="Chọn" class="input12">
+                                            <input 
+                                            type="text"
+                                            nz-input
+                                            formControlName="institute"  
+                                            placeholder="Chọn" 
+                                            class="input12"
+                                            >
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon11"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -216,11 +284,17 @@
                         </div>
                         <div nz-col class="accident">Tai nạn</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Thông tin tai nạn không hợp lệ">
                                           <nz-input-group class="background_accident">
-                                            <input type="text" placeholder="Chọn" class="input13">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="accident"
+                                            placeholder="Chọn" 
+                                            class="input13"
+                                            >
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon12"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -234,11 +308,17 @@
                       <div nz-row class="item7">
                         <div nz-col class="object">Đối tượng</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Đối tượng không tồn tại">
                                           <nz-input-group class="background_object">
-                                            <input type="text" placeholder="Chọn" class="input14">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="object"
+                                            placeholder="Chọn" 
+                                            class="input14"
+                                            >
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon13"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -247,11 +327,17 @@
                         </div>
                         <div nz-col class="group">Nhóm h...</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Nhóm không tồn tại">
                                           <nz-input-group class="background_group">
-                                            <input type="text" placeholder="Chọn" class="input15">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="group"
+                                            placeholder="Chọn" 
+                                            class="input15"
+                                            >
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon14"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -265,11 +351,17 @@
                       <div nz-row class="item8">
                         <div nz-col class="rank">Cấp bậc</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Cấp bậc không hợp lệ">
                                           <nz-input-group class="background_rank">
-                                            <input type="text" placeholder="Chọn" class="input16">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="rank"
+                                            placeholder="Chọn" 
+                                            class="input16"
+                                            >
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon15"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -278,11 +370,17 @@
                         </div>
                         <div nz-col class="positon">Chức vụ</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Chức vụ không hợp lệ">
                                           <nz-input-group class="background_positon">
-                                            <input type="text" placeholder="Nhập" class="input17">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="position"
+                                            placeholder="Nhập" 
+                                            class="input17"
+                                            >
                                           </nz-input-group>
                                       </nz-form-control>
                                 </nz-form-item>
@@ -295,11 +393,17 @@
                       <div nz-row class="item9">
                         <div nz-col class="unit">Đơn vị</div>
                         <div nz-col>
-                            <form action="">
+                            <form [formGroup]="formInformation">
                                 <nz-form-item>
-                                      <nz-form-control>
+                                      <nz-form-control nzErrorTip="Đơn vị không hợp lệ"> 
                                           <nz-input-group class="background_unit">
-                                            <input type="text" placeholder="Chọn" class="input18">
+                                            <input 
+                                            type="text" 
+                                            nz-input
+                                            formControlName="unit"
+                                            placeholder="Chọn" 
+                                            class="input18"
+                                            >
                                             <span nz-icon nzType="down" nzTheme="outline" class="icon17"></span>
                                           </nz-input-group>
                                       </nz-form-control>
@@ -354,11 +458,17 @@
                   <div nz-row class="item11">
                     <div nz-col class="reason">Lý do khám</div>
                     <div nz-col>
-                        <form action="">
+                        <form nz-form [formGroup]="formMedical">
                             <nz-form-item>
-                                  <nz-form-control>
+                                  <nz-form-control nzErrorTip="Bạn chưa điền lý do">
                                       <nz-input-group>
-                                        <input type="text" placeholder="Nhập" class="input19">
+                                        <input 
+                                        type="text"
+                                        nz-input
+                                        formControlName="reason" 
+                                        placeholder="Nhập" 
+                                        class="input19"
+                                        >
                                       </nz-input-group>
                                   </nz-form-control>
                             </nz-form-item>
@@ -369,11 +479,17 @@
                  <div nz-row class="item12">
                   <div nz-col class="guarantee">Lý do bảo lãnh</div>
                   <div nz-col>
-                      <form action="">
+                      <form nz-form [formGroup]="formMedical">
                           <nz-form-item>
-                                <nz-form-control>
+                                <nz-form-control nzErrorTip="Lý do bảo lãnh không hợp lệ">
                                     <nz-input-group>
-                                      <input type="text" placeholder="Nhập" class="input20">
+                                      <input 
+                                      type="text"
+                                      nz-input
+                                      formControlName="guarantee" 
+                                      placeholder="Nhập" 
+                                      class="input20"
+                                      >
                                     </nz-input-group>
                                 </nz-form-control>
                           </nz-form-item>
@@ -383,11 +499,17 @@
                <div nz-row class="item13">
                 <div nz-col class="free_number">Số miễn cùng</div>
                 <div nz-col>
-                    <form action="">
+                    <form nz-form [formGroup]="formMedical">
                         <nz-form-item>
-                              <nz-form-control>
+                              <nz-form-control nzErrorTip="Số miễn không hợp lệ">
                                   <nz-input-group class="background_free_number">
-                                    <input type="text" placeholder="Chọn" class="input21">
+                                    <input 
+                                    type="text"
+                                    nz-input
+                                    formControlName="freenumber" 
+                                    placeholder="Chọn" 
+                                    class="input21"
+                                    >
                                     <span nz-icon nzType="down" nzTheme="outline" class="icon19"></span>
                                   </nz-input-group>
                               </nz-form-control>
@@ -396,11 +518,17 @@
                 </div>
                 <div nz-col class="free_number1">Miễn cũng chi...</div>
                 <div nz-col>
-                    <form action="">
+                    <form nz-form [formGroup]="formMedical">
                         <nz-form-item>
-                              <nz-form-control>
+                              <nz-form-control nzErrorTip="Không hợp lệ">
                                   <nz-input-group class="background_free_number1">
-                                    <input type="text" placeholder="Chọn" class="input22">
+                                    <input 
+                                    type="text"
+                                    nz-input
+                                    formControlName="exempt" 
+                                    placeholder="Chọn" 
+                                    class="input22"
+                                    >
                                     <span nz-icon nzType="down" nzTheme="outline" class="icon20"></span>
                                   </nz-input-group>
                               </nz-form-control>
@@ -412,11 +540,17 @@
               <div nz-row class="item14">
                 <div nz-col class="service">Dịch vụ</div>
                 <div nz-col>
-                    <form action="">
+                    <form nz-form [formGroup]="formMedical">
                         <nz-form-item>
-                              <nz-form-control>
+                              <nz-form-control nzErrorTip="Dịch vụ không hợp lệ">
                                   <nz-input-group class="background_service">
-                                    <input type="text" placeholder="Chọn" class="input23">
+                                    <input 
+                                    type="text" 
+                                    nz-input
+                                    formControlName="service" 
+                                    placeholder="Chọn" 
+                                    class="input23"
+                                    >
                                     <span nz-icon nzType="down" nzTheme="outline" class="icon21"></span>
                                   </nz-input-group>
                               </nz-form-control>
@@ -425,11 +559,17 @@
                 </div>
                 <div nz-col class="room">Phòng</div>
                 <div nz-col>
-                    <form action="">
+                    <form nz-form [formGroup]="formMedical">
                         <nz-form-item>
-                              <nz-form-control>
+                              <nz-form-control nzErrorTip="Số phòng không hợp lệ">
                                   <nz-input-group class="background_room">
-                                    <input type="text" placeholder="Chọn" class="input24">
+                                    <input 
+                                    type="text" 
+                                    nz-input
+                                    formControlName="room" 
+                                    placeholder="Chọn" 
+                                    class="input24"
+                                    >
                                     <span nz-icon nzType="down" nzTheme="outline" class="icon22"></span>
                                   </nz-input-group>
                               </nz-form-control>
@@ -487,11 +627,16 @@
                         <div nz-row class="form_card">
                           <div nz-col  class="title_card">Mã thẻ</div>
                           <div nz-col>
-                            <form >
+                            <form nz-form [formGroup]="formCard">
                               <nz-form-item>
-                                    <nz-form-control>
+                                    <nz-form-control nzErrorTip="Mã thẻ không hợp lệ">
                                         <nz-input-group>
-                                          <input type="text" placeholder="Nhập" class="input25">
+                                          <input 
+                                          type="text" 
+                                          nz-input
+                                          formControlName="idCard"
+                                          placeholder="Nhập"
+                                           class="input25">
                                         </nz-input-group>
                                     </nz-form-control>
                               </nz-form-item>
@@ -502,11 +647,17 @@
                         <div nz-row class="form_NameCard">
                           <div nz-col  class="title_NameCard">Tên trên thẻ</div>
                           <div nz-col>
-                            <form >
+                            <form nz-form [formGroup]="formCard">
                               <nz-form-item>
-                                    <nz-form-control>
+                                    <nz-form-control nzErrorTip="Tên thẻ không hợp lệ">
                                         <nz-input-group>
-                                          <input type="text" placeholder="Nhập" class="input26">
+                                          <input 
+                                          type="text" 
+                                          nz-input
+                                          formControlName="nameCard"
+                                          placeholder="Nhập" 
+                                          class="input26"
+                                          >
                                         </nz-input-group>
                                     </nz-form-control>
                               </nz-form-item>
@@ -517,11 +668,17 @@
                         <div nz-row class="form_Date">
                           <div nz-col  class="title_Date">Ngày sinh</div>
                           <div nz-col>
-                            <form >
+                            <form nz-form [formGroup]="formCard">
                               <nz-form-item>
-                                    <nz-form-control>
+                                    <nz-form-control nzErrorTip="Bạn chưa điền ngày sinh">
                                         <nz-input-group>
-                                          <input type="text" placeholder="Nhập" class="input27">
+                                          <input 
+                                          type="text" 
+                                          nz-input
+                                          formControlName="dateCard"
+                                          placeholder="Nhập" 
+                                          class="input27"
+                                          >
                                         </nz-input-group>
                                     </nz-form-control>
                               </nz-form-item>
@@ -561,11 +718,15 @@
                       <div nz-row class="form_Realationship">
                         <div nz-col  class="title_Realationship">Quan hệ với BN</div>
                         <div nz-col>
-                          <form >
+                          <form nz-form [formGroup]="formRelatives">
                             <nz-form-item>
-                                  <nz-form-control>
+                                  <nz-form-control nzErrorTip="Quan hệ không hợp lệ">
                                       <nz-input-group>
-                                        <input type="text" placeholder="Nhập">
+                                        <input
+                                         type="text" 
+                                         nz-input
+                                         formControlName="relatives"
+                                         placeholder="Nhập">
                                       </nz-input-group>
                                   </nz-form-control>
                             </nz-form-item>
@@ -577,11 +738,16 @@
                       <div nz-row class="form_NameRealtionship">
                         <div nz-col  class="title_NameRealtionship">Họ tên</div>
                         <div nz-col>
-                          <form >
+                          <form nz-form [formGroup]="formRelatives">
                             <nz-form-item>
-                                  <nz-form-control>
+                                  <nz-form-control nzErrorTip="Bạn chưa điền họ tên">
                                       <nz-input-group>
-                                        <input type="text" placeholder="Nhập">
+                                        <input 
+                                        type="text" 
+                                        nz-input
+                                        formControlName="nameRelatives"
+                                        placeholder="Nhập"
+                                        >
                                       </nz-input-group>
                                   </nz-form-control>
                             </nz-form-item>
@@ -592,11 +758,16 @@
                       <div nz-row class="form_TelephoneNumber">
                         <div nz-col  class="title_TelephoneNumber">Điện thoại</div>
                         <div nz-col>
-                          <form >
+                          <form nz-form [formGroup]="formRelatives">
                             <nz-form-item>
-                                  <nz-form-control>
+                                  <nz-form-control nzErrorTip="Số điện thoại không hợp lệ">
                                       <nz-input-group>
-                                        <input type="text" placeholder="Nhập">
+                                        <input 
+                                        type="text"
+                                        nz-input
+                                        formControlName="phoneRelatives" 
+                                        placeholder="Nhập"
+                                        >
                                       </nz-input-group>
                                   </nz-form-control>
                             </nz-form-item>
@@ -608,11 +779,16 @@
                       <div nz-row class="form_AddressRealtionship">
                         <div nz-col class="title_AddressRealtionship">Địa chỉ</div>
                         <div nz-col>
-                          <form >
+                          <form   nz-form [formGroup]="formRelatives">
                             <nz-form-item>
-                                  <nz-form-control>
+                                  <nz-form-control nzErrorTip="Bạn chưa nhập địa chỉ">
                                       <nz-input-group>
-                                        <input type="text" placeholder="Nhập">
+                                        <input 
+                                        type="text"
+                                        nz-input
+                                        formControlName="addressRelatives" 
+                                        placeholder="Nhập"
+                                        >
                                       </nz-input-group>
                                   </nz-form-control>
                             </nz-form-item>
@@ -667,7 +843,14 @@
                 <div nz-col class="">
                   <span nz-icon nzType="save" nzTheme="outline"></span>
                 </div>
-                <div nz-col class="title_Print">Lưu thông tin</div>
+                  <button 
+                  class="submitButton"
+                  nz-button
+                  (click)="submitForm()"
+                  >
+                    Lưu thông tin
+                  </button>
+              
               </div>
             </div>
 
