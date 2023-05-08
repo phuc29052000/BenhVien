@@ -5,10 +5,10 @@ import {
   Validators,
 } from '@angular/forms';
 
-import { PatientData } from 'src/app/@core/data/patient';
+import {PatientData} from 'src/app/@core/data/patient';
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { Router } from '@angular/router';
-import { el } from 'date-fns/locale';
+
 
 @Component({
   selector: 'app-information',
@@ -21,7 +21,8 @@ export class InformationComponent implements OnInit {
     private fb : UntypedFormBuilder,
     private messeage : NzMessageService,
     private router : Router,
-   
+    
+    
     ) {}
 
   validateForm!: UntypedFormGroup;
@@ -35,7 +36,7 @@ export class InformationComponent implements OnInit {
 
   submitForm():void {
       if(this.validateForm.valid){
-
+        console.log('submit', this.validateForm.value);
       }else {
         Object.values(this.validateForm.controls).forEach((control)=>{
             if (control.invalid){
@@ -46,7 +47,7 @@ export class InformationComponent implements OnInit {
       }
 
       if(this.formInformation.valid){
-
+        console.log('submit', this.formInformation.value);
       }else {
         Object.values(this.formInformation.controls).forEach((control)=>{
           if (control.invalid){
@@ -57,7 +58,7 @@ export class InformationComponent implements OnInit {
       }
 
       if(this.formMedical.valid){
-
+        console.log('submit', this.formMedical.value);
       }else {
         Object.values(this.formMedical.controls).forEach((control)=>{
           if (control.invalid){
@@ -68,7 +69,7 @@ export class InformationComponent implements OnInit {
       }
 
       if(this.formCard.valid){
-
+        console.log('submit', this.formCard.value);
       }else {
         Object.values(this.formCard.controls).forEach((control)=>{
           if (control.invalid){
@@ -80,7 +81,7 @@ export class InformationComponent implements OnInit {
 
 
       if(this.formRelatives.valid){
-
+          console.log('submit', this.formRelatives.value)
       }else {
         Object.values(this.formRelatives.controls).forEach((control)=>{
           if (control.invalid){
@@ -99,7 +100,7 @@ export class InformationComponent implements OnInit {
       phone : [null, [Validators.required]],
       city : [null,[Validators.required]],
       district : [null, [Validators.required]],
-      address : [null,[Validators.required]]
+      address : [null,[Validators.required]],
     });
 
     this.formInformation = this.fb.group({

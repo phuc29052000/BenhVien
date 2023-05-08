@@ -59,7 +59,7 @@
                 <div nz-row class="item1">
                   <div nz-col class="date">Giới tính</div>
                   <div nz-col>
-                      <form nz-form [formGroup]="validateForm">
+                      <form nz-form [formGroup]="validateForm" >
                           <nz-form-item>
                                 <nz-form-control nzErrorTip="Chưa điền giới tính">
                                     <nz-input-group class="background_gender">
@@ -737,11 +737,11 @@
                       
                       <div nz-row class="form_NameRealtionship">
                         <div nz-col  class="title_NameRealtionship">Họ tên</div>
-                        <div nz-col>
-                          <form nz-form [formGroup]="formRelatives">
+                        <div nz-col >
+                          <form nz-form [formGroup]="formRelatives" >
                             <nz-form-item>
-                                  <nz-form-control nzErrorTip="Bạn chưa điền họ tên">
-                                      <nz-input-group>
+                                  <nz-form-control nzErrorTip="Bạn chưa nhập họ tên">
+                                      <nz-input-group >
                                         <input 
                                         type="text" 
                                         nz-input
