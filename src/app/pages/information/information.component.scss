@@ -64,7 +64,13 @@
                    .item{
                     // display: flex;
                     // align-items: center;
-              
+                    .backgroundform_Name {
+                        width: 352px;
+                        height: 40px;
+                        margin-right: 24px;
+                        // background-color: red;
+                    }
+
                     .name {
                         width: 100px;
                         height: 20px;
@@ -76,14 +82,20 @@
                         color: #000000;
                         margin: 10px 8px 10px 0px;
                     }
+                    
                     .input1 {
                         width: 244px;
                         height: 40px;
                         padding: 10px;
                         background: #F7F8F9;
                         border-radius: 4px;
-                        margin: 0px 24px 0px 0px;
+                        // margin: 0px 24px 0px 0px;
                         border: none;
+                    }
+                    .backgroundform_Date {
+                        width: 352px;
+                        height: 40px;
+                        // background-color: red;
                     }
                     .date {
                         width: 100px;
@@ -123,6 +135,11 @@
                 .item1 {
                     // display: flex;
                     // align-items: center;
+                    .backgroundform_Gender {
+                        width: 352px;
+                        height: 40px;
+                        margin-right: 24px;
+                    }
                         .date {
                         width: 100px;
                         height: 20px;
@@ -143,16 +160,20 @@
                         padding: 10px;
                         background: #F7F8F9;
                         border-radius: 4px;
-                        margin-right: 24px;
+                        // margin-right: 24px;
                         border: none;
                     }
                     .icon3 {
                         position: absolute;
                         top: 14px;
-                        right: 35px;
+                        right: 12px;
                         cursor: pointer;
                     }
                 }
+                    .backgroundform_Phone {
+                        width: 352px;
+                        height: 40px;
+                    }
                     .phone {
                         width: 100px;
                         height: 20px;
@@ -187,6 +208,12 @@
                     .item2 {
                         // display: flex;
                         // align-items: center;
+                        .backgroundform_City {
+                            width: 352px;
+                            height: 40px;
+                            margin-right: 24px;
+                          
+                        }
                         .city {
                             width: 100px;
                             font-family: 'Segoe UI';
@@ -214,6 +241,11 @@
                             right: 11px;
                             cursor: pointer;
                         }
+                        .backgroundform_District {
+                            width: 352px;
+                            height: 40px;
+                            
+                        }
                         .district {
                             width: 100px;
                             font-family: 'Segoe UI';
@@ -222,7 +254,7 @@
                             font-size: 14px;
                             line-height: 20px;
                             color: #000000;
-                            margin: 10px 8px 10px 24px;
+                            margin: 10px 8px 10px 0px;
                         }
                         .background_district{
                             position: relative;
@@ -328,6 +360,11 @@
                         .item4 {
                             // display: flex;
                             // align-items: center;
+                            .backgroundform_DayReception {
+                                width: 352px;
+                                height: 40px;
+                                margin-right: 24px;
+                            }
                             .day_Reception {
                                 width: 100px;
                                 font-family: 'Segoe UI';
@@ -356,6 +393,10 @@
                                 font-size: 16px;
                                 cursor: pointer;
                             }
+                            .backgroundform_Subclass {
+                                width: 352px;
+                                height: 40px;
+                            }
                             .subclass {
                                 width: 100px;
                                 font-family: 'Segoe UI';
@@ -364,7 +405,7 @@
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #000000;
-                                margin: 10px 8px 0px 24px;
+                                margin: 10px 8px 0px 0px;
                             }
                             .background_subclass {
                                 position: relative;
@@ -392,6 +433,11 @@
                     .item5 {
                         // display: flex;
                         // align-items: center;
+                            .backgroundform_Type {
+                                width: 352px;
+                                height: 40px;
+                                margin-right: 24px;
+                            }
                             .type {
                                 width: 100px;
                                 font-family: 'Segoe UI';
@@ -419,6 +465,10 @@
                                 right:12px;
                                 cursor: pointer;
                             }
+                            .backgroundform_Source {
+                                width: 352px;
+                                height: 40px;
+                            }
                             .source {
                                 width: 100px;
                                 font-family: 'Segoe UI';
@@ -427,7 +477,7 @@
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #000000;
-                                margin: 10px 8px 0px 24px;
+                                margin: 10px 8px 0px 0px;
                             }
                             .input11 {
                                 width: 244px;
@@ -453,6 +503,11 @@
                     .item6 {
                         // display: flex;
                         // align-items: center;
+                        .backgroundform_Institute {
+                            width: 352px;
+                            height: 40px;
+                            margin-right: 24px;
+                        }
                             .institute {
                                 width: 100px;
                                 font-family: 'Segoe UI';
@@ -479,6 +534,10 @@
                                 top:14px;
                                 right: 12px;
                             }
+                            .backgroundform_Accident {
+                                width: 352px;
+                                height: 40px;
+                            }
                             .accident {
                                 width: 100px;
                                 font-family: 'Segoe UI';
@@ -487,7 +546,7 @@
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #000000;
-                                margin: 10px 8px 0px 24px;
+                                margin: 10px 8px 0px 0px;
                             }
                             .background_accident{
                                 position: relative;
@@ -513,6 +572,11 @@
                     margin-top: 12px;
                         .item7 {
                             // align-items: center;
+                            .backgroundform_Object{
+                                width: 352px;
+                                height: 40px;
+                                margin-right: 24px;
+                            }
                             .object {
                                 width: 100px;
                                 font-family: 'Segoe UI';
@@ -540,6 +604,10 @@
                                 right: 12px;
                                 cursor: pointer;
                             }
+                            .backgroundform_Group {
+                                width: 352px;
+                                height: 40px;
+                            }
                             .group {
                                 width: 100px;
                                 font-family: 'Segoe UI';
@@ -548,7 +616,7 @@
                                 font-size: 14px;
                                 line-height: 20px;
                                 color: #000000;
-                                margin: 10px 8px 0px 24px;
+                                margin: 10px 8px 0px 0px;
                             }
                             .background_group {
                                 position: relative;
@@ -575,6 +643,11 @@
                         margin-top: 12px;
                             .item8 {
                                 // align-items: center;
+                                .backgroundform_Rank {
+                                    width: 352px;
+                                    height: 40px;
+                                    margin-right: 24px;
+                                }
                                 .rank {
                                     width: 100px;
                                     font-family: 'Segoe UI';
@@ -602,6 +675,10 @@
                                     right: 12px;
                                     cursor: pointer;
                                 }
+                                .backgroundform_Positon {
+                                    width: 352px;
+                                    height: 40px;
+                                }
                                 .positon {
                                     width: 100px;
                                     font-family: 'Segoe UI';
@@ -610,7 +687,7 @@
                                     font-size: 14px;
                                     line-height: 20px;
                                     color: #000000;
-                                    margin: 10px 8px 0px 24px;
+                                    margin: 10px 8px 0px 0px;
                                 }
                                 .background_positon {
                                     position: relative;
@@ -637,6 +714,10 @@
                         margin-top: 12px;
                             .item9 {
                                 // align-items: center;
+                                .backgroundForm_Unit{
+                                    width: 352px;
+                                    height: 40px;
+                                }
                                 .unit {
                                     width: 100px;
                                     font-family: 'Segoe UI';
@@ -771,9 +852,10 @@
                     .form_reason {
                         width: 728px;
                         height: 40px;
-                        // background-color: red;
                             .item11 {
                                 // align-items: center;
+                                width: 728px;
+                                height: 40px;
                                 margin-bottom: 12px;
                                 .reason {
                                     width: 100px;
@@ -798,6 +880,8 @@
                             }
                             .item12 {
                                 // align-items: center;
+                                width: 728px;
+                                height: 40px;
                                 margin-bottom: 12px;
                             }
                             .guarantee {
@@ -822,7 +906,14 @@
                     }
                     .item13 {
                         // align-items: center;
+                        width: 728px;
+                        height: 40px;
                         margin-bottom: 12px;
+                            .backgroundForm_FreeNumber {
+                                width: 352px;
+                                height: 40px;
+                                margin-right: 24px;
+                            }
                             .free_number {
                                 width: 100px;
                                 color: #000000;
@@ -852,6 +943,10 @@
                                 right: 12px;
                                 cursor: pointer;
                             }
+                            .backgroundform_FreeNumber1 {
+                                width: 352px;
+                                height: 40px;   
+                            }
                             .free_number1 {
                                 width: 100px;
                                 color: #000000;
@@ -860,7 +955,7 @@
                                 font-weight: 400;
                                 font-size: 14px;
                                 line-height: 20px;
-                                margin: 10px 8px 0px 24px;
+                                margin: 10px 8px 0px 0px;
                             }
                             .background_freenumber1 {
                                 position: relative;
@@ -883,6 +978,11 @@
                     }.item14 {
                         // align-items: center;
                         margin-bottom: 12px;
+                        .backgroundForm_Service {
+                            width: 352px;
+                            height: 40px;
+                            margin-right: 24px;
+                        }
                             .service {
                                 width: 100px;
                                 color: #000000;
@@ -910,8 +1010,12 @@
                                 top:14px;
                                 right: 12px;
                             }
+                            .backgroundForm_Room {
+                                width: 352px;
+                                height: 40px;
+                            }
                             .room {
-                                margin: 10px 8px 0px 24px;
+                                margin: 10px 8px 0px 0px;
                                 width: 100px;
                                 color: #000000;
                                 font-family: 'Segoe UI';

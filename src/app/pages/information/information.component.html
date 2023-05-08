@@ -16,6 +16,7 @@
 
               <div class="form_namedate">
                   <div nz-row class="item">
+                    <div nz-row class="backgroundform_Name">
                     <div nz-col class="name">Họ và tên</div>
                     <div nz-col>
                         <form nz-form [formGroup]="validateForm" >
@@ -34,6 +35,8 @@
                             </nz-form-item>
                         </form>
                     </div>
+                  </div>
+                    <div  nz-row class="backgroundform_Date">
                     <div nz-col class="date">Ngày sinh</div>
                     <div nz-col>
                         <form nz-form [formGroup]="validateForm">
@@ -53,10 +56,12 @@
                         </form>
                     </div>
                   </div>
+                  </div>
               </div>
 
               <div class="form_genderphone">
                 <div nz-row class="item1">
+                  <div nz-row class="backgroundform_Gender">
                   <div nz-col class="date">Giới tính</div>
                   <div nz-col>
                       <form nz-form [formGroup]="validateForm" >
@@ -76,9 +81,11 @@
                           </nz-form-item>
                       </form>
                   </div>
+                </div>
+                  <div nz-row class="backgroundform_Phone">
                   <div nz-col class="phone">Di động</div>
                   <div nz-col>
-                      <form nz-form [formGroup]="validateForm">
+                      <form nz-form [formGroup]="validateForm" > 
                           <nz-form-item>
                                 <nz-form-control nzErrorTip="Bạn chưa điền số điện thoại">
                                     <nz-input-group>
@@ -95,10 +102,12 @@
                       </form>
                   </div>
                 </div>
+                </div>
               </div>
 
               <div class="form_citydistrict">
                 <div nz-row class="item2">
+                  <div nz-row class="backgroundform_City">
                   <div nz-col class="city">Thành phố</div>
                   <div nz-col>
                       <form nz-form [formGroup]="validateForm">
@@ -118,6 +127,8 @@
                           </nz-form-item>
                       </form>
                   </div>
+                  </div>
+                  <div nz-row class="backgroundform_District">
                   <div nz-col class="district">Quận/Xã</div>
                   <div nz-col>
                       <form nz-form [formGroup]="validateForm">
@@ -137,6 +148,7 @@
                           </nz-form-item>
                       </form>
                   </div>
+                </div>
                 </div>
               </div>
 
@@ -179,6 +191,8 @@
                     
                       <div class="form_Reception">
                       <div nz-row class="item4">
+
+                        <div nz-row class="backgroundform_DayReception">
                         <div nz-col class="day_Reception">Ngày nhập viện</div>
                         <div nz-col>
                             <form nz-form [formGroup]="formInformation">
@@ -197,6 +211,9 @@
                                 </nz-form-item>
                             </form>
                         </div>
+                        </div>
+
+                        <div nz-row class="backgroundform_Subclass"> 
                         <div nz-col class="subclass">Phân lớp</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -216,10 +233,12 @@
                             </form>
                         </div>
                       </div>
+                      </div>
                     </div>
 
                     <div class="form_sourcetype">
                       <div nz-row class="item5">
+                        <div nz-row class="backgroundform_Type">
                         <div nz-col class="type">Loại</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -239,6 +258,9 @@
                                 </nz-form-item>
                             </form>
                         </div>
+                       </div>
+
+                        <div nz-row class="backgroundform_Source">
                         <div nz-col class="source">Nguồn</div>
                         <div nz-col>
                             <form  [formGroup]="formInformation">
@@ -258,11 +280,13 @@
                                 </nz-form-item>
                             </form>
                         </div>
+                       </div>
                       </div>
                     </div>
 
                     <div class="form_institute_accident">
                       <div nz-row class="item6">
+                        <div nz-row class="backgroundform_Institute">
                         <div nz-col class="institute">Từ viện</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -282,6 +306,9 @@
                                 </nz-form-item>
                             </form>
                         </div>
+                        </div>
+
+                        <div nz-row class="backgroundform_Accident">
                         <div nz-col class="accident">Tai nạn</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -302,10 +329,12 @@
                             </form>
                         </div>
                       </div>
+                      </div>
                     </div>
 
                     <div class="form_object_group">
                       <div nz-row class="item7">
+                        <div nz-row class="backgroundform_Object">
                         <div nz-col class="object">Đối tượng</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -325,6 +354,9 @@
                                 </nz-form-item>
                             </form>
                         </div>
+                      </div>
+
+                        <div nz-row class="backgroundform_Group">
                         <div nz-col class="group">Nhóm h...</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -344,11 +376,13 @@
                                 </nz-form-item>
                             </form>
                         </div>
+                        </div>
                       </div>
                     </div>
 
                     <div class="form_rank_positon">
                       <div nz-row class="item8">
+                        <div nz-row class="backgroundform_Rank">
                         <div nz-col class="rank">Cấp bậc</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -368,6 +402,9 @@
                                 </nz-form-item>
                             </form>
                         </div>
+                       </div>
+
+                        <div nz-row class="backgroundform_Positon">
                         <div nz-col class="positon">Chức vụ</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -387,10 +424,12 @@
                             </form>
                         </div>
                       </div>
+                      </div>
                     </div>
 
                     <div class="form_unit">
                       <div nz-row class="item9">
+                        <div nz-row class="backgroundForm_Unit">
                         <div nz-col class="unit">Đơn vị</div>
                         <div nz-col>
                             <form [formGroup]="formInformation">
@@ -410,6 +449,7 @@
                                 </nz-form-item>
                             </form>
                         </div>
+                      </div>
                     </div>
 
                     <div class="list">
@@ -496,7 +536,9 @@
                       </form>
                   </div>
                </div> 
+
                <div nz-row class="item13">
+                <div nz-row class="backgroundForm_FreeNumber">
                 <div nz-col class="free_number">Số miễn cùng</div>
                 <div nz-col>
                     <form nz-form [formGroup]="formMedical">
@@ -516,6 +558,9 @@
                         </nz-form-item>
                     </form>
                 </div>
+               </div>
+
+                <div nz-row class="backgroundform_FreeNumber1">
                 <div nz-col class="free_number1">Miễn cũng chi...</div>
                 <div nz-col>
                     <form nz-form [formGroup]="formMedical">
@@ -535,9 +580,11 @@
                         </nz-form-item>
                     </form>
                 </div>
+                </div>
               </div>
 
               <div nz-row class="item14">
+                <div nz-row class="backgroundForm_Service">
                 <div nz-col class="service">Dịch vụ</div>
                 <div nz-col>
                     <form nz-form [formGroup]="formMedical">
@@ -557,6 +604,9 @@
                         </nz-form-item>
                     </form>
                 </div>
+                </div>
+
+                <div nz-row class="backgroundForm_Room">
                 <div nz-col class="room">Phòng</div>
                 <div nz-col>
                     <form nz-form [formGroup]="formMedical">
@@ -575,6 +625,7 @@
                               </nz-form-control>
                         </nz-form-item>
                     </form>
+                </div>
                 </div>
               </div>
                 <div class="list_customer">

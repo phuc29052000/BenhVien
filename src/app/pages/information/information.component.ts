@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {
+  AbstractControl,
   UntypedFormBuilder,
+  UntypedFormControl,
   UntypedFormGroup,
-  Validators,
+  ValidatorFn,
+  Validators
 } from '@angular/forms';
 
 import {PatientData} from 'src/app/@core/data/patient';
@@ -21,15 +24,16 @@ export class InformationComponent implements OnInit {
     private fb : UntypedFormBuilder,
     private messeage : NzMessageService,
     private router : Router,
-    
-    
-    ) {}
+    ) {
+
+    }
 
   validateForm!: UntypedFormGroup;
   formInformation!: UntypedFormGroup;
   formMedical!: UntypedFormGroup;
   formCard!:UntypedFormGroup;
   formRelatives !: UntypedFormGroup;
+
 
 
 
@@ -45,6 +49,9 @@ export class InformationComponent implements OnInit {
             }
         });
       }
+      
+
+     
 
       if(this.formInformation.valid){
         console.log('submit', this.formInformation.value);
@@ -91,13 +98,14 @@ export class InformationComponent implements OnInit {
       });
       }
   }
+  
 
   ngOnInit(): void {
     this.validateForm = this.fb.group({
       username : [null,[Validators.required]],
       birthday : [null,[Validators.required]],
       gender : [null,[Validators.required]],
-      phone : [null, [Validators.required]],
+      phone : [null, [Validators.required,Validators.pattern('^[0-9]*$')]],
       city : [null,[Validators.required]],
       district : [null, [Validators.required]],
       address : [null,[Validators.required]],
@@ -127,7 +135,7 @@ export class InformationComponent implements OnInit {
     });
 
     this.formCard = this.fb.group({
-      idCard : [null,[Validators.required]],
+      idCard : [null,[Validators.required,Validators.pattern('^[0-9]*$')]],
       nameCard : [null,[Validators.required]],
       dateCard : [null,[Validators.required]]
     });
@@ -135,7 +143,7 @@ export class InformationComponent implements OnInit {
     this.formRelatives = this.fb.group({
         relatives : [null,[Validators.required]],
         nameRelatives : [null,[Validators.required]],
-        phoneRelatives : [null,[Validators.required]],
+        phoneRelatives : [null,[Validators.required,Validators.pattern('^[0-9]*$')]],
         addressRelatives : [null,[Validators.required]]
     })
 
