@@ -8,7 +8,10 @@ import {
   Validators
 } from '@angular/forms';
 
-import {PatientData} from 'src/app/@core/data/patient';
+import { Observable, Observer } from 'rxjs';
+
+
+import { PatientData } from 'src/app/@core/data/patient';
 import { NzMessageService } from 'ng-zorro-antd/message';
 import { Router } from '@angular/router';
 
@@ -20,13 +23,16 @@ import { Router } from '@angular/router';
 })
 export class InformationComponent implements OnInit {
 
+
+
   constructor(
     private fb : UntypedFormBuilder,
     private messeage : NzMessageService,
-    private router : Router,
+    private router : Router
     ) {
 
     }
+    
 
   validateForm!: UntypedFormGroup;
   formInformation!: UntypedFormGroup;
@@ -34,9 +40,7 @@ export class InformationComponent implements OnInit {
   formCard!:UntypedFormGroup;
   formRelatives !: UntypedFormGroup;
 
-
-
-
+      
 
   submitForm():void {
       if(this.validateForm.valid){
@@ -97,10 +101,16 @@ export class InformationComponent implements OnInit {
           }
       });
       }
+      this.messeage.create('success','Lưu thông tin thành công');
   }
   
+  
+  
+  
+
 
   ngOnInit(): void {
+    
     this.validateForm = this.fb.group({
       username : [null,[Validators.required]],
       birthday : [null,[Validators.required]],
@@ -149,5 +159,5 @@ export class InformationComponent implements OnInit {
 
     localStorage.clear();
   }
-
+  
 }

@@ -47,7 +47,7 @@ export class Relatives {
 }
 
 export abstract class  PatientData{
-    abstract inforMain(data : InforMain): Observable <any>;
+
 
 }
 
